@@ -1115,6 +1115,11 @@ section.lazy-placeholder:after {
 .cid-rHdPwZv45e .dropdown-item:hover {
   color: #767676 !important;
 }
+.cid-rHqun1xzg2 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/background4.jpg");
+}
 .cid-rHdPwZv45e .navbar {
   background: #ffffff;
   transition: none;
