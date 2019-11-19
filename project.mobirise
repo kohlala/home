@@ -55,7 +55,7 @@
         "url": "https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i"
       }
     ],
-    "uniqCompNum": 46,
+    "uniqCompNum": 48,
     "versionPublish": "4.11.4",
     "screenshot": "screenshot.png",
     "favicon": "",
@@ -627,6 +627,65 @@
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".formoid": {
+              "margin": "auto"
+            },
+            ".form-control": {
+              "padding-left": "1.5rem",
+              "padding-right": "1.5rem"
+            },
+            ".input-group-btn .btn": {
+              "padding-top": "1rem",
+              "padding-bottom": "1rem",
+              "margin": "0 !important"
+            },
+            "a:not([href]):not([tabindex])": {
+              "color": "#fff"
+            },
+            "a.btn-white:not([href]):not([tabindex])": {
+              "color": "#333"
+            },
+            "@media (max-width: 768px)": {
+              ".mbr-form .row": {
+                "-webkit-flex-direction": "column",
+                "flex-direction": "column",
+                "-webkit-align-items": "center",
+                "align-items": "center"
+              },
+              ".form-group, .input-group-btn, .input-group-btn .btn": {
+                "max-width": "300px",
+                "width": "100%"
+              }
+            },
+            "@media (min-width: 769px)": {
+              ".mbr-form .row > *": {
+                "padding": "0 0.5rem"
+              }
+            }
+          },
+          "_name": "form3",
+          "_customHTML": "<section class=\"mbr-section form3\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-12 col-lg-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    SUBSCRIBE FORM\n                </h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\">\n                    Subscribe to our Newsletter\n                </h3>\n            </div>\n        </div>\n\n        <div class=\"row py-2 justify-content-center\">\n            <div mbr-form class=\"col-12 col-lg-6  col-md-8 \">\n                <!---Formbuilder Form--->\n                <form action name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for filling out the form!</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                        </div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"form-group col\" data-for=\"email\">\n                            <input type=\"email\" name=\"email\" placeholder=\"Email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-auto input-group-btn \" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\"><a type=\"submit\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"mailto:antoine@kohlala.com\">SUBSCRIBE</a></div>\n                    </div>\n                </form><!---Formbuilder Form--->\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rIakAA2Zxa",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "form3-1a"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
             ".mbr-section-btn > *": {
               "margin": "0"
             },
@@ -718,6 +777,60 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "position": "relative",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "p": {
+              "color": "#767676"
+            },
+            ".card": {
+              "border-radius": "0px",
+              "margin-bottom": "-1px",
+              ".card-header": {
+                "border-radius": "0px",
+                "border": "0px",
+                "padding": "0",
+                "a.panel-title": {
+                  "margin-bottom": "0",
+                  "margin-top": "-1px",
+                  "font-weight": "500",
+                  "font-style": "normal",
+                  "display": "block",
+                  "text-decoration": "none !important",
+                  "line-height": "normal",
+                  "&:focus": {
+                    "text-decoration": "none !important"
+                  },
+                  "h4": {
+                    "border": "1px solid #dfdfdf",
+                    "padding": "1.3rem 2rem",
+                    "margin-bottom": "0",
+                    ".sign": {
+                      "padding-right": "1rem"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "_name": "toggle1",
+          "_customHTML": "<section class=\"toggle1\" group=\"Accordion & Toggles & Tabs\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-switch-arrow\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <select title=\"Toggles Count\" name=\"bootstrapAccordion\">\n             <option value=\"1\">1</option>\n             <option value=\"2\">2</option>\n             <option value=\"3\" selected>3</option>\n             <option value=\"4\">4</option>\n             <option value=\"5\">5</option>\n             <option value=\"6\">6</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n        <div class=\"container\">\n            <div class=\"media-container-row\">\n                <div class=\"col-12 col-md-8\">\n                    <div class=\"section-head text-center space30\">\n                       <h2 class=\"mbr-section-title pb-5 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                            Frequently Asked Questions</h2>\n                    </div>\n                    <div class=\"clearfix\"></div>\n                    <div id=\"bootstrap-toggle\" class=\"toggle-panel accordionStyles tab-content\">\n                        <div class=\"card\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span> What is Kohlala</h4>\n                                </a>\n                            </div>\n                            <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                       Mobirise is an offline app for Window and Mac to easily create small/medium websites, landing pages, online resumes and portfolios, promo sites for apps, events, services and products.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card\" mbr-if=\"bootstrapAccordion > 1\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span>What can I&nbsp;</h4>\n                                </a>\n\n                            </div>\n                            <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                       Mobirise is perfect for non-techies who are not familiar with the intricacies of web development and for designers who prefer to work as visually as possible, without fighting with code. Also great for pro-coders for fast prototyping and small customers' projects.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card\" mbr-if=\"bootstrapAccordion > 2\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span> Why Mobirise?\n                                    </h4>\n                                </a>\n                            </div>\n                            <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                       Key differences from traditional builders:<br>* Minimalistic, extremely <strong>easy-to-use</strong> interface<br>* <strong>Mobile</strong>-friendliness, latest website blocks and techniques \"out-the-box\"<br>* <strong>Free</strong> for commercial and non-profit use</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card\" mbr-if=\"bootstrapAccordion > 3\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span> This is a accordion Title 4\n                                    </h4>\n                                </a>\n                            </div>\n                            <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in nulla ut magna vehicula libero luctus in ipsum consequat faucibus. Ut porta nulla ac dapibus convallis. Curabitur sit amet massa quam. In ut ex auctor, porta neque quis, sagittis purus. Nunc auctor gravida magna, sed efficitur tortor tristique quis.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card\" mbr-if=\"bootstrapAccordion > 4\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span> This is a accordion Title 5\n                                    </h4>\n                                </a>\n                            </div>\n                            <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in nulla ut magna vehicula libero luctus in ipsum consequat faucibus. Ut porta nulla ac dapibus convallis. Curabitur sit amet massa quam. In ut ex auctor, porta neque quis, sagittis purus. Nunc auctor gravida magna, sed efficitur tortor tristique quis.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card\" mbr-if=\"bootstrapAccordion > 5\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span> This is a accordion Title 6\n                                    </h4>\n                                </a>\n                            </div>\n                            <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in nulla ut magna vehicula libero luctus in ipsum consequat faucibus. Ut porta nulla ac dapibus convallis. Curabitur sit amet massa quam. In ut ex auctor, porta neque quis, sagittis purus. Nunc auctor gravida magna, sed efficitur tortor tristique quis.</p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n</section>",
+          "_cid": "rIamcIKxFF",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "toggle1-1b"
         },
         {
           "alias": false,
