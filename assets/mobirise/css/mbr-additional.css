@@ -1209,44 +1209,6 @@ section.lazy-placeholder:after {
   text-decoration: line-through;
   color: #767676;
 }
-.cid-rKwcJdkrbB {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #ffffff;
-}
-.cid-rKwcJdkrbB .mbr-section-subtitle {
-  color: #767676;
-  font-weight: 300;
-}
-.cid-rKwcJdkrbB .mbr-content-text {
-  color: #767676;
-}
-.cid-rKwcJdkrbB .card {
-  word-wrap: break-word;
-  flex-shrink: 0;
-  -webkit-flex-shrink: 0;
-}
-.cid-rKwcJdkrbB .cards-container {
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-  word-break: break-word;
-}
-@media (max-width: 767px) {
-  .cid-rKwcJdkrbB .card:not(.last-child) {
-    padding-bottom: 1.5rem;
-  }
-}
-.cid-rKwcJdkrbB .img-text {
-  color: #c1c1c1;
-}
-.cid-rKwcJdkrbB .mbr-section-title {
-  color: #80b8f7;
-}
 .cid-rHqTllEIkx {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -1291,11 +1253,52 @@ section.lazy-placeholder:after {
 .cid-rHqTllEIkx .card-title {
   color: #80b8f7;
 }
+.cid-rKwcJdkrbB {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+.cid-rKwcJdkrbB .mbr-section-subtitle {
+  color: #767676;
+  font-weight: 300;
+}
+.cid-rKwcJdkrbB .mbr-content-text {
+  color: #767676;
+}
+.cid-rKwcJdkrbB .card {
+  word-wrap: break-word;
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+}
+.cid-rKwcJdkrbB .cards-container {
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  word-break: break-word;
+}
+@media (max-width: 767px) {
+  .cid-rKwcJdkrbB .card:not(.last-child) {
+    padding-bottom: 1.5rem;
+  }
+}
+.cid-rKwcJdkrbB .img-text {
+  color: #c1c1c1;
+}
+.cid-rKwcJdkrbB .mbr-section-title {
+  color: #333333;
+}
+.cid-rKwcJdkrbB H4 {
+  color: #80b8f7;
+}
 .cid-rIamcIKxFF {
   padding-top: 60px;
   padding-bottom: 60px;
   position: relative;
-  background-color: #ffffff;
+  background-color: #efefef;
 }
 .cid-rIamcIKxFF p {
   color: #767676;
