@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Site-11-07_1727-clone",
-    "currentPage": "index.html",
+    "currentPage": "terms.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -3379,9 +3379,9 @@
         }
       ]
     },
-    "page5.html": {
+    "terms.html": {
       "settings": {
-        "meta_descr": "Website Creator Description",
+        "meta_descr": "",
         "title": "Terms and conditions",
         "order": 3
       },
