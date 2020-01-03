@@ -1197,51 +1197,6 @@ section.lazy-placeholder:after {
   text-decoration: line-through;
   color: #767676;
 }
-.cid-rMvatPgMc6 {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #ffffff;
-}
-.cid-rMvatPgMc6 .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rMvatPgMc6 .formoid {
-  margin: auto;
-}
-.cid-rMvatPgMc6 .form-control {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-.cid-rMvatPgMc6 .input-group-btn .btn {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin: 0 !important;
-}
-.cid-rMvatPgMc6 a:not([href]):not([tabindex]) {
-  color: #fff;
-}
-.cid-rMvatPgMc6 a.btn-white:not([href]):not([tabindex]) {
-  color: #333;
-}
-@media (max-width: 768px) {
-  .cid-rMvatPgMc6 .mbr-form .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  .cid-rMvatPgMc6 .form-group,
-  .cid-rMvatPgMc6 .input-group-btn,
-  .cid-rMvatPgMc6 .input-group-btn .btn {
-    max-width: 300px;
-    width: 100%;
-  }
-}
-@media (min-width: 769px) {
-  .cid-rMvatPgMc6 .mbr-form .row > * {
-    padding: 0 0.5rem;
-  }
-}
 .cid-rHqTllEIkx {
   padding-top: 90px;
   padding-bottom: 90px;
