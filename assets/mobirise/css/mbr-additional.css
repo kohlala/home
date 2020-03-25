@@ -1285,51 +1285,6 @@ section.lazy-placeholder:after {
 .cid-rKwcJdkrbB H4 {
   color: #80b8f7;
 }
-.cid-rUgekOjKiR {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #ffffff;
-}
-.cid-rUgekOjKiR .nav-tabs {
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  border-bottom: none;
-}
-.cid-rUgekOjKiR .nav-tabs .nav-link {
-  box-sizing: border-box;
-  color: #c1c1c1;
-  font-style: normal;
-  font-weight: 500;
-  border-radius: 3px;
-  border: 1px solid #c1c1c1;
-  padding: 1rem 3rem;
-  margin: 0.4rem .8rem !important;
-  transition: all .5s;
-}
-.cid-rUgekOjKiR .nav-tabs .nav-link:hover {
-  background-color: #80b8f7;
-}
-.cid-rUgekOjKiR .nav-tabs .nav-link.active {
-  font-weight: 500;
-  color: #000000;
-  font-style: normal;
-  border: none;
-  background: #80b8f7;
-}
-.cid-rUgekOjKiR .nav-tabs .nav-link.active:hover {
-  border: none;
-}
-.cid-rUgekOjKiR p {
-  color: #232323;
-}
-.cid-rUgekOjKiR .mbr-text {
-  text-align: center;
-}
-.cid-rUgekOjKiR H2 {
-  color: #80b8f7;
-}
 .cid-rIamcIKxFF {
   padding-top: 60px;
   padding-bottom: 60px;
